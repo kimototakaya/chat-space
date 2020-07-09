@@ -19,6 +19,8 @@
 
 /public/assets
 .byebug_history
+*.jpg
+*.png
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
@@ -29,3 +31,4 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+public/uploads/*
