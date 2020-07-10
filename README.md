@@ -48,8 +48,8 @@ Things you may want to cover:
 |password|string|null:false|
 
 ### Association
-- has_many :massages
-- has_many :groups, through: :messages
+- has_many :messages
+- has_many :groups, through: :groups_users
 - has_many :groups_users
 
 
