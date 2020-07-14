@@ -1,0 +1,30 @@
+.chat-Main
+  .group-info
+    .group-box
+      .group-member test
+      .member-name Member:masa
+    .edit-btn
+      %a(href="#")
+        Edit
+  .messagefield
+    .message-box
+      .message-name 
+        masa
+      .datetime 
+        2019/11/20(wed) 12:01
+    .message__text　
+    おはよう！
+    .message-box
+      .message-name 
+        masa
+      .datetime 
+        2019/11/20(wed) 12:01
+    .message__text　
+    今日は夜から雨
+  .message-form
+    .Text__Form
+      %input.Text__Form__Input{placeholder: "type a message", type: "text", :id =>"message"}
+        %label{class: "Text__Form__Input__Image"}
+          = icon('fas', 'image')
+          %input.Text__Form__Input__Image--Colorless{type: "file"} 　
+    %input.text-submit{value:"Send", type: "submit"}
