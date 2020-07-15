@@ -1,14 +1,16 @@
 .header
   .header_top
     .username
-      .username_box user
+      .username_box
+        = current_user.name
       .icon-box
         .icon
-        = link_to "#" do
-          = icon('fas', 'edit', class: "it")
+          = link_to "#" do
+            = icon('fas', 'edit', class: "it")
         .icon
-        = link_to "#" do
-          = icon('fas', 'cog', class: "it")
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: "it")
+          
   .group_list
     .group
       .group__name techcamp
