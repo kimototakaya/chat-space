@@ -45,7 +45,7 @@
 }
 
 .group_list {
-  height: calc(100vh - 300px);
+  height: calc(100vh - 100px);
   width: 300px;
   background-color: #2f3e52;
   padding: 0px 20px;
@@ -159,6 +159,10 @@ a{
   justify-content: space-between;
 }
 
+.Form {
+  width: 100%;
+  display: flex;
+}
 .Text__Form {
   width: 100%;
   position: relative;
@@ -172,7 +176,7 @@ a{
       line-height: 50px;
       font-size: 25px;
       position: absolute;
-      right: 0px;
+      right: 10px;
       &--Colorless{
         display: none;
       }
