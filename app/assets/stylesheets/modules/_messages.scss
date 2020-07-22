@@ -49,6 +49,7 @@
   width: 300px;
   background-color: #2f3e52;
   padding: 0px 20px;
+  overflow: scroll;
 }
 
 .group{
@@ -126,6 +127,7 @@ a{
   height: calc(100vh - 190px);
   background-color: #fafafa;
   padding: 0px 40px;
+  overflow: scroll;
 }
 
 .message-box {
