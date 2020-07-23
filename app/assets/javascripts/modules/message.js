@@ -2,38 +2,40 @@ $(function(){
   function buildHTML(message){
     if (message.image) {
       let html = 
-        `<div class="message-box">
-          <div class="message-name">
-            ${message.user_name}
-          </div>
-          <div class="datetime">
-            ${message.created_at}
-          </div>
-          <div class="message__text">
-          <p class="Message__content">
-            ${message.content}
-          </p>
-            <img class="Message__image" src="${message.image}">
-          </div>
+        `<div class="MessageBox" data-message-id=${message.id}>
+          <div class="message-box">
+            <div class="message-name">
+              ${message.user_name}
+            </div>
+            <div class="datetime">
+              ${message.created_at}
+            </div>
+            <div class="message__text">
+              <p class="Message__content">
+                ${message.content}
+              </p>
+              <img class="Message__image" src="${message.image}">
+            </div>  
         </div>`
       return html;
     } else {
       let html =
-      `<div class="message-box">
+      `<div class="MessageBox" data-message-id=${message.id}>
+        <div class="message-box">
           <div class="message-name">
             ${message.user_name}
           </div>
           <div class="datetime">
             ${message.created_at}
-          </div>
-          <div class="message__text">
+        </div>
+        <div class="message__text">
           <p class="Message__content">
             ${message.content}
           </p>
           </div>
-        </div>`
-        return html;
-    } ;
+      </div>`
+      return html;
+    };
   }
 
   $('.Form').on('submit', function(e){
@@ -56,7 +58,7 @@ $(function(){
       $('.text-submit').prop('disabled', false);
     })
     .fail(function() {
-        alert("メッセージ送信に失敗しました");
+      alert("メッセージ送信に失敗しました");
     })
   });
 });
