@@ -21,19 +21,20 @@ $(function(){
       return html;
     } else {
       let html =
-      `<div class="messageBox" data-message-id=${message.id}>
+      `<div class="message-box" data-message-id=${message.id}>
         <div class="message-Info">
-          <div class="message-name">
+          <div class="message__name">
             ${message.user_name}
           </div>
           <div class="datetime">
             ${message.created_at}
+          </div>
         </div>
         <div class="message__text">
           <p class="Message__content">
             ${message.content}
           </p>
-          </div>
+        </div>
       </div>`
       return html;
     };
