@@ -10,12 +10,13 @@ $(function(){
             <div class="datetime">
               ${message.created_at}
             </div>
-            <div class="message__text">
-              <p class="Message__content">
-                ${message.content}
-              </p>
-              <img class="Message__image" src="${message.image}">
-            </div>  
+          </div>
+          <div class="message__text">
+            <p class="Message__content">
+              ${message.content}
+            </p>
+            <img class="Message__image" src="${message.image}">
+          </div>  
         </div>`
       return html;
     } else {
